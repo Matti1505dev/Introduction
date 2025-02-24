@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Bewerbungsseite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Haupt-Container: Enthält Bio (Text + Foto) -->
+    <div class="container bio-section">
+      <div class="bio-text">
+        <h1>Willkommen auf meiner DevOps-Bewerbungsseite</h1>
+        <p>
+          Mein Name ist Matthias Töpfer, ich bin 44 Jahre alt und lebe in Ketzin. 
+          Nach meiner bisherigen beruflichen Laufbahn habe ich mich entschieden, in die IT zu wechseln und absolviere derzeit eine Weiterbildung zum DevOps Engineer.
+        </p>
+        <p>
+          Ich stehe am Anfang meiner Karriere in der IT und bin hochmotiviert, mein Wissen kontinuierlich zu erweitern. Besonders faszinieren mich Automatisierung, 
+          Cloud-Technologien und die Optimierung von Prozessen. Ich bin lernbereit, arbeite mich schnell in neue Themen ein und suche nach einer Möglichkeit, mein Wissen in der Praxis anzuwenden.
+        </p>
+        <p>
+          Eine Chance, mit Ihnen zu arbeiten, würde ich als großen Vertrauensbeweis sehen – eine Gelegenheit, die ich mit Engagement, Offenheit und Leistungsbereitschaft zurückzahlen werde. 
+          Mein Ziel ist es, Vertrauen aufzubauen und eine langfristige, zufriedene Zusammenarbeit zu ermöglichen.
+        </p>
+        <p>
+          Ich freue mich darauf, gemeinsam mit Ihnen nachhaltige und innovative Lösungen zu entwickeln!
+        </p>
+      </div>
+      <div class="photo-container">
+        <!-- Hier kannst du dein Bewerbungsfoto hinterlegen -->
+        <img src="image.jpeg" alt="Bewerbungsfoto" class="profile-img" />
+      </div>
+    </div>
+  
+    <h2>Skills</h2>
+    <p>Klicke auf einen Skill, um (falls vorhanden) ein Zertifikat anzuzeigen.</p>
+    <div class="skills">
+      <!-- Jeder .skill wird im JavaScript anhand ihres Textinhalts erkannt und bekommt ein zugeordnetes Bild. 
+           Ist keins hinterlegt, zeigt das Modal "Zertifikat ist in progress" an. -->
+      <div class="skill">Linux & Bash</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git</div>
+      <div class="skill">Git Workflow</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">Ansible</div>
+      <div class="skill">Grafana</div>
+      <div class="skill">Prometheus</div>
+      <div class="skill">Azure Cloud</div>
+    </div>
+  
+    <!-- Modales Fenster -->
+    <div id="cert-modal" class="modal">
+      <span class="close">&times;</span>
+      <!-- Rechtsklick deaktiviert -->
+      <img class="modal-content" id="cert-image" oncontextmenu="return false;" />
+      <!-- "Zertifikat ist in progress" -->
+      <div id="cert-text" class="modal-text"></div>
+      <!-- Bildunterschrift -->
+      <div id="caption"></div>
+    </div>
+  
+    <!-- Social-Links (LinkedIn und GitHub) -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/matthias-t%C3%B6pfer-316042343/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      |
+      <a href="https://github.com/Matti1505dev" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
+   <!-- Externer JavaScript-Link -->
+   <script src="index.js"></script>
+  </body>
+  </html>
